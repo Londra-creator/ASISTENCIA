@@ -1,56 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema inteligente para el Control de Asistencia Docente y Estudiante</title>
+    <title>ASISTE-UNILIBRE | Sistema de Control de Asistencia</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Una página web sobre HTML y
- metadatos.">
-    <meta name="keywords" content="HTML, metadatos, SEO">
 </head>
 <body>
     <header>
-      <h1>¡Bienvenido!</h1>
-      <p>Es un <b>sistema de informacion desarrollado para la univercidad libre</b>, <i>que permite llevar el control de asistencia de docentes y estudiantes de anera digital y organizada, el sistema funciona mediante la generacion de un codigo QR por cada clase</i>, el cual es activado por el docente al inicio de la sesion, los estudiantes escaneanel codigo desde el movil dentro del aula y el sistema registra automaticamente la fecha, la hora, la asignatura , corregir la asistencia antes de guardarla de forma definitiva, garantizando un control confiable y reduciendo errores y asegurando la precision de los datos.</p>
-      <img src="logo.jpeg" alt="Mi foto">
-      <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav> 
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">ASISTE-UNILIBRE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="login.html">Acceso</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <main>
-        <section>
-           <h2>¿Qué es HTML?</h2>
-           <div class="product">
-             <img src="producto1.jpg" alt="producto 1">
-             <h3>Producto 1</h3>
-             <p>Descripción del producto 1.</p>           
-             <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear páginas web. Permite estructurar el contenido de una página utilizando etiquetas y elementos, como encabezados, párrafos, enlaces, imágenes y listas.</p>
-             <li>Item 1</li>
-             <li>Item 2</li>
-           </div>
-          </section>
-          <section class="featured">
-               <h2>destacados</h2>
-               <div class="card">
-                  <h3>card 1</h3>
-                  <p>Descripción de la tarjeta 1.</p>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Sistema de Control de Asistencia</h1>
+            <p>Universidad Libre - Gestión Digital de Asistencia para Docentes y Estudiantes</p>
+            <div class="hero-buttons">
+                <a href="login.html"><button class="cta-button primary">Iniciar Sesión</button></a>
+                <a href="funcionalidades.html"><button class="cta-button secondary">Más Información</button></a>
             </div>
-            <div class="card">
-                 <h3>card 2</h3>           
-                 <p>contenido de la tarjeta 2.</p>
+        </div>
+    </section>
+
+    <section id="funcionalidades" class="features">
+        <h2>Funcionalidades Principales</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">✅</div>
+                <h3>Registro de Asistencia</h3>
+                <p>Control digital y organizado de asistencia para docentes y estudiantes en tiempo real</p>
             </div>
-          </section>
-    </main>
+            <div class="feature-card">
+                <div class="icon">�</div>
+                <h3>Reportes Automáticos</h3>
+                <p>Generación de reportes de asistencia por periodo académico, asignatura y estudiante</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔔</div>
+                <h3>Notificaciones</h3>
+                <p>Alertas automáticas sobre inasistencias y riesgo académico</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📱</div>
+                <h3>Acceso Digital</h3>
+                <p>Consulta de historial personal de asistencias desde cualquier dispositivo</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h3>Control de Acceso</h3>
+                <p>Sistema seguro con autenticación mediante credenciales institucionales</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Gestión en Tiempo Real</h3>
+                <p>Actualización inmediata de registros y sincronización automática</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="usuarios" class="users">
+        <h2>Tipos de Usuario</h2>
+        <div class="user-grid">
+            <div class="user-card">
+                <div class="user-icon">👨‍💼</div>
+                <h3>Administrador</h3>
+                <ul>
+                    <li>Crear y gestionar usuarios</li>
+                    <li>Administrar periodos académicos</li>
+                    <li>Configurar horarios y asignaturas</li>
+                    <li>Generar reportes generales</li>
+                    <li>Control total del sistema</li>
+                </ul>
+            </div>
+            <div class="user-card">
+                <div class="user-icon">👨‍🏫</div>
+                <h3>Docente</h3>
+                <ul>
+                    <li>Registrar asistencia de clase</li>
+                    <li>Consultar historial de asistencias</li>
+                    <li>Finalizar clases</li>
+                    <li>Ver reportes de sus asignaturas</li>
+                    <li>Gestionar horarios</li>
+                </ul>
+            </div>
+            <div class="user-card">
+                <div class="user-icon">👨‍🎓</div>
+                <h3>Estudiante</h3>
+                <ul>
+                    <li>Consultar asistencias personales</li>
+                    <li>Registrar asistencia a clase</li>
+                    <li>Ver historial académico</li>
+                    <li>Recibir notificaciones</li>
+                    <li>Acceso a reportes propios</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="acceso" class="login-section">
+        <h2>Acceso al Sistema</h2>
+        <div class="login-container">
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" placeholder="Ingrese su usuario institucional" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+                </div>
+                <div class="form-group">
+                    <label for="rol">Tipo de Usuario</label>
+                    <select id="rol" required>
+                        <option value="">Seleccione...</option>
+                        <option value="admin">Administrador</option>
+                        <option value="docente">Docente</option>
+                        <option value="estudiante">Estudiante</option>
+                    </select>
+                </div>
+                <button type="submit" class="login-button">Ingresar al Sistema</button>
+                <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+            </form>
+        </div>
+    </section>
+
     <footer>
-      <h2>integrantes</h2>
-      <p>kevin,miguel,andres</p>
-        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-    </footer>    
+        <div class="footer-content">
+            <h2>Integrantes</h2>
+            <p>Kevin, Miguel, Andrés</p>
+            <h2>Ubicación</h2>
+             <p>Avenida 4ta No. 12N-81, Urbanización El Bosque, Cúcuta, Colombia</p>
+
+             <button class="btn-mapa" onclick="mostrarMapa()">
+              <a href="ubicanos.html">ubicanos</a>
+              Ver ubicación en Google Maps
+             </button>
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

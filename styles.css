@@ -1,28 +1,83 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0; 
+    margin: 0;
+    background: #f4f6f9;
+}
+
+header {
+    background: #af0404;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
 }
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px;
     text-align: center;
 }
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+section {
+    margin-bottom: 40px;
 }
-nav li {
-    display: inline-block;
-    margin: 0 10px;
+
+img {
+    margin-top: 15px;
+    border-radius: 10px;
 }
+
+.btn-mapa {
+    background: #c8102e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-mapa:hover {
+    background: #e20324;
+}
+
+#mapa {
+    display: none;
+    margin-top: 20px;
+}
+
 .featured {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
+
 .card {
-    border: 1px solid #ccc;
+    background: white;
     padding: 20px;
-    width: 30%;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    width: 250px;
+}
+
+footer {
+    background: #af0404;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
